@@ -1,7 +1,7 @@
-# tipCalculator
-Tip Calculator iOS app
+# Tip Calculator iOS app
 
-This is an iOS app to calculate Tips (10, 15, 20).
+
+This is an iOS app to calculate Tips (10, 15, 20). It calculates the totoal bill amount based of the selected tip percetage. It also allows the user to store default values for tip percentage
 
 Time Spent : 4 hours
 
