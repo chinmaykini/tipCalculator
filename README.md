@@ -16,3 +16,12 @@ Completed user Stories
 * [x] Required : Settings page designed includes the ability to select the default tip percentage.
 
 * [x] Required : The value selected in the settings page is used to calculate the tip on the view load.
+
+Notes:
+
+
+Walkthrough of all user stories:
+
+![Video Walkthrough](tipCalcDemo.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
