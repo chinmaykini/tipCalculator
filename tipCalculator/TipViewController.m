@@ -82,9 +82,9 @@
     
     float totalAmount = billAmount + tipAmount;
     
-    self.tipLabelField.text = [NSString stringWithFormat:@"%.2f", tipAmount];
+    self.tipLabelField.text = [NSString stringWithFormat:@"$%.2f", tipAmount];
     
-    self.totalLabelField.text = [NSString stringWithFormat:@"%.2f", totalAmount];
+    self.totalLabelField.text = [NSString stringWithFormat:@"$%.2f", totalAmount];
     
 }
 
