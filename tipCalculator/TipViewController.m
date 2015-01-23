@@ -12,8 +12,13 @@
 @interface TipViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabelField;
-@property (weak, nonatomic) IBOutlet UILabel *totalLabelField;
+@property (weak, nonatomic) IBOutlet UILabel *totalField;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *percentSegmentField;
+@property (weak, nonatomic) IBOutlet UILabel *onePersonField;
+@property (weak, nonatomic) IBOutlet UILabel *twoPersonField;
+@property (weak, nonatomic) IBOutlet UILabel *threePersonField;
+@property (weak, nonatomic) IBOutlet UILabel *fourPersonField;
 
 - (IBAction)onTap:(id)sender;
 - (void)updateValues;
@@ -68,8 +73,8 @@
 }
 
 - (IBAction)onTap:(id)sender {
-    [self.view endEditing:YES];
-    [self updateValues];
+    [self.view endEditing:YES]; // to exit keyboard ontap
+    [self updateValues];        // to update all voayes on tap
 }
 
 - (void) updateValues{
@@ -84,7 +89,12 @@
     
     self.tipLabelField.text = [NSString stringWithFormat:@"$%.2f", tipAmount];
     
-    self.totalLabelField.text = [NSString stringWithFormat:@"$%.2f", totalAmount];
+    self.totalField.text = [NSString stringWithFormat:@"$%.2f", totalAmount];
+    
+    self.onePersonField.text = [NSString stringWithFormat:@"$%.2f", totalAmount];
+    self.twoPersonField.text = [NSString stringWithFormat:@"$%.2f", totalAmount/2];
+    self.threePersonField.text = [NSString stringWithFormat:@"$%.2f", totalAmount/3];
+    self.fourPersonField.text = [NSString stringWithFormat:@"$%.2f", totalAmount/4];
     
 }
 
