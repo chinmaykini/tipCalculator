@@ -5,6 +5,8 @@ This is an iOS app to calculate Tips (10, 15, 20). It calculates the totoal bill
 
 Time Spent : 4 hours
 
+Required and Optional Tasks mentioned [here](https://gist.github.com/timothy1ee/7747214)
+
 Completed user Stories
 
 * [x] Required : User can add the bill amount in a text field 
